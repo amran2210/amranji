@@ -196,7 +196,11 @@
     .team-card {
       width: 100%;
     }
-  
+
+.persatu {
+  background-color: rgb(189, 239, 88);
+}
+
     .schedule-table th, .schedule-table td {
       font-size: 0.8rem;
     }
