@@ -137,9 +137,7 @@
     color: white;
   }
   
-  .schedule-table tr:nth-child(even) {
-    background-color: #ecf0f1;
-  }
+ 
   
   .schedule-table tr:hover {
     background-color: #f39c12;
@@ -196,7 +194,7 @@
     .team-card {
       width: 100%;
     }
-
+  
     .schedule-table th, .schedule-table td {
       font-size: 0.8rem;
     }
