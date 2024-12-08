@@ -1,205 +1,211 @@
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+  background: url("karang.jpg") no-repeat center center/cover;
+  padding: 50px 0;
+  text-align: center;
+  color: rgb(13, 12, 12);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #f39c12;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.cta-btn:hover {
+  background-color: #e67e22;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Team Cards */
+.teams .team-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: #ecf0f1;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.team-card i {
+  font-size: 3rem;
+  color: #f39c12;
+}
+
+/* Schedule Table */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.schedule-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.schedule-table tr:hover {
+  background-color: #f39c12;
+  color: white;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: #f39c12;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  
+
   header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    flex-direction: column;
   }
-  
-  header nav ul li {
-    margin: 0 20px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
-  
-  header nav ul li a:hover {
-    color: #f39c12;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: url('karang.jpg') no-repeat center center/cover;
-    padding: 50px 0;
-    text-align: center;
-    color: rgb(13, 12, 12);
-  }
-  
+
   .hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .cta-btn {
-    background-color: #f39c12;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-  }
-  
-  .cta-btn:hover {
-    background-color: #e67e22;
-  }
-  
-  /* Section Styles */
-  .section {
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #2c3e50;
-  }
-  
-  /* Team Cards */
-  .teams .team-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
+
   .team-card {
-    background-color: #ecf0f1;
-    width: 200px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
   }
-  
-  .team-card h3 {
-    margin-top: 15px;
+
+  .schedule-table th,
+  .schedule-table td {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
     font-size: 1.5rem;
   }
-  
-  .team-card i {
-    font-size: 3rem;
-    color: #f39c12;
-  }
-  
-  /* Schedule Table */
-  .schedule-table {
+
+  .team-card {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
   }
-  
-  .schedule-table th, .schedule-table td {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ddd;
+
+  .schedule-table th,
+  .schedule-table td {
+    font-size: 0.8rem;
   }
-  
-  .schedule-table th {
-    background-color: #2c3e50;
-    color: white;
-  }
-  
- 
-  
-  .schedule-table tr:hover {
-    background-color: #f39c12;
-    color: white;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-  }
-  
-  footer .social-icons a {
-    color: white;
-    margin: 0 15px;
-    font-size: 1.5rem;
-    text-decoration: none;
-  }
-  
-  footer .social-icons a:hover {
-    color: #f39c12;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 2rem;
-    }
-  
-    header nav ul {
-      flex-direction: column;
-    }
-  
-    .hero h2 {
-      font-size: 2rem;
-    }
-  
-    .team-card {
-      width: 45%;
-    }
-  
-    .schedule-table th, .schedule-table td {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hero h2 {
-      font-size: 1.5rem;
-    }
-  
-    .team-card {
-      width: 100%;
-    }
-  
-    .schedule-table th, .schedule-table td {
-      font-size: 0.8rem;
-    }
-  }
-  
+}
+
+.grupb {
+  color: white;
+  background-color: #2c3e50;
+}
+
 .persatu {
   background-color: green;
 }
@@ -207,4 +213,3 @@
 .perhari {
   background-color: rgb(189, 239, 88);
 }
-
