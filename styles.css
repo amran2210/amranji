@@ -206,10 +206,22 @@ footer .social-icons a:hover {
   background-color: #2c3e50;
 }
 
+.juara {
+  background-color: rgb(0, 200, 255);
+}
+
 .persatu {
   background-color: green;
 }
 
 .perdua {
   background-color: rgb(189, 239, 88);
+}
+
+.lolos {
+  background-color: yellow;
+}
+
+.tidak {
+  background-color: rgb(188, 36, 36);
 }
